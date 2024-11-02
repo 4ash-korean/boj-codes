@@ -1,2 +1,1 @@
-# boj-codes
-baekjoon codes
+도움이 되길 :)
