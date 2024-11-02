@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main(void)
+{
+    cin.tie(0)->ios::sync_with_stdio(false);
+    int n,m;
+    cin>>n>>m;
+    int hap[100001]={0};
+    for(int i=1;i<=n;i++)
+    {
+        int a;
+        cin>>a;
+        hap[i]=hap[i-1]+a;
+    }
+    for(int i=1;i<=m;i++)
+    {
+        int a,b;
+        cin>>a>>b;
+        cout<<hap[b]-hap[a-1]<<'\n';
+    }
+}
