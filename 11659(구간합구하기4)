@@ -10,12 +10,12 @@ int main(void)
     {
         int a;
         cin>>a;
-        hap[i]=hap[i-1]+a;
+        hap[i]=hap[i-1]+a;//이전값과 현재값 더하기
     }
     for(int i=1;i<=m;i++)
     {
         int a,b;
         cin>>a>>b;
-        cout<<hap[b]-hap[a-1]<<'\n';
+        cout<<hap[b]-hap[a-1]<<'\n';//a부터 b까지의 합은 b까지의합 빼기 a-1까지의 합
     }
 }
