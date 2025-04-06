@@ -1,0 +1,22 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+using ll=long long;
+ll n;
+ll v[500010];
+ll total,num;
+int main(void)
+{
+    cin>>n;
+    for(int i=0;i<n;i++)
+        cin>>v[i];
+    for(int i=n-1;i>=0;i--)
+    {
+        if(num<v[i])
+            num++;
+        else
+            num=v[i];
+        total+=num;
+    }
+    cout<<total;
+}
